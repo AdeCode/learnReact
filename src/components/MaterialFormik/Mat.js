@@ -10,7 +10,7 @@ import Two from './Two';
 import Three from './Three';
 import { useState } from 'react';
 
-const steps = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
+const steps = ['Form One', 'Form Two', 'Form Three'];
 const container = {
     width: '50%',
     border: '2px solid blue',
@@ -33,21 +33,7 @@ export default function Mat() {
         occupation: '',
         tribe: ''
     })
-    // const [formOneFields, setFormOneFields] = useState({
-    //     firstName: '',
-    //     lastName: '',
-    //     email: ''
-    // })
-    // const [formTwoFields, setFormTwoFields] = useState({
-    //     country: '',
-    //     state: '',
-    //     city: ''
-    // })
-    // const [formThreeFields, setFormThreeFields] = useState({
-    //     religion: '',
-    //     occupation: '',
-    //     tribe: ''
-    // })
+    
 
     const isStepSkipped = (step) => {
         return skipped.has(step);
